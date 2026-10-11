@@ -1,0 +1,6 @@
+.spotlight-card{position:relative;isolation:isolate;overflow:hidden;border-radius:inherit;background:#111;box-shadow:0 24px 48px -24px rgba(0,0,0,.6)}
+.spotlight-card__light,.spotlight-card__border,.spotlight-card__edge{position:absolute;inset:0;pointer-events:none;border-radius:inherit}
+.spotlight-card__light{z-index:2;mix-blend-mode:screen;transition:opacity .08s linear}
+.spotlight-card__border{z-index:4;border:1px solid rgba(255,255,255,.12)}
+.spotlight-card__edge{z-index:5;padding:1px;opacity:0;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;transition:opacity .08s linear}
+.spotlight-card>:not(.spotlight-card__light):not(.spotlight-card__border):not(.spotlight-card__edge){position:relative;z-index:3}
