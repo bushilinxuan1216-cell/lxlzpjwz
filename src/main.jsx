@@ -161,7 +161,17 @@ function App() {
     </div>}
 
     <section className="hero" id="home">
-      <video className="hero-video parallax-media" data-parallax="hero" src="/assets/hero-video.mp4" autoPlay muted loop playsInline />
+      <video
+        className="hero-video parallax-media"
+        data-parallax="hero"
+        src="/assets/hero-video.mp4"
+        poster="/assets/hero-video-poster.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      />
       <div className="hero-shade" />
       <div className="hero-content page-width">
         <img className="hero-title-image" src="/assets/design-presentation.png" alt="Design presentation" />
